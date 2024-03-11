@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Запуск Wazzup в CRM Ramex",
+  "description": "Запускает Wazzup в Ramex минуя их интеграцию",
+  "author": "Рябикин Ярослав 😉",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://crmramex.ru/contract/handing/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ]
+}

@@ -1,0 +1,31 @@
+body {
+
+    /*text-align:center;*/
+    width: 300px;
+    padding: 0 2rem 1rem;
+}
+p, li, .accent {
+    font-size: 18px;
+}
+
+button {
+    transition: all 0.2s ease;
+    width:100%;
+    color:white;
+    background:linear-gradient(#01a9e1, #5bc4bc);
+    border-width:0;
+    border-radius:20px;
+    padding:5px;
+    font-weight: bold;
+    cursor:pointer;
+    filter: drop-shadow(4px 4px 10px black);
+}
+button:hover {
+    background:linear-gradient(#5bc4bc, #01a9e1);
+    filter: drop-shadow(4px 4px 20px black);
+
+}
+button:active {
+    background:linear-gradient(#6bb7b1, #127ca0);
+    filter: drop-shadow(2px 2px 5px black);
+}
